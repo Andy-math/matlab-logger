@@ -5,6 +5,7 @@ function flag = echo(flag)
 		state = flag;
 	end
 	if nargout
+		assert(~isequal(state,[]));
 		flag = state;
 	end
 end
